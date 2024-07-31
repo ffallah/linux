@@ -13,4 +13,4 @@
       authorized_key:
         user: ansible
         state: present
-        key: keys.content
+        key: keys
