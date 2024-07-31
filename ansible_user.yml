@@ -1,0 +1,25 @@
+---
+- name: Create a user named ansible
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Ensure ansible user is present
+      user:
+        name: ansible
+        state: present
+        shell: /bin/bash
+        create_home: yes
+
+    - name: Ensure sudo package is installed (RedHat/CentOS)
+      yum:
+        name: sudo
+        state: present
+
+    - name: Add ansible user to sudoers
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^ansible'
+        line: 'ansible ALL=(ALL) NOPASSWD:ALL'
+        validate: '/usr/sbin/visudo -cf %s'
