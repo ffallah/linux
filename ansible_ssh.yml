@@ -8,6 +8,10 @@
         return_content: True
       register: keys
 
+    - name: Print keys
+      debug:
+        var: keys
+
     - name: Set my ssh key
       become: true
       authorized_key:
