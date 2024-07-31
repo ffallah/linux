@@ -4,7 +4,7 @@
     tasks:
       - name: Set my ssh key
         become: true
-        authorized_key:
+        ansible.posix.authorized_key:
           user: ansible
           state: present
           key: "{{ lookup('file', './ansible_id_rsa.pub') }}"
