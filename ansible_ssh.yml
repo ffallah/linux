@@ -1,10 +1,16 @@
 ---
-  - name: Set authorized key taken from file
-    hosts: all
-    tasks:
-      - name: Set my ssh key
-        become: true
-        authorized_key:
-          user: ansible
-          state: present
-          key: "https://github.com/ffallah/linux/ansible_id_rsa.pub"
+- name: Set authorized key taken from file
+  hosts: localhost
+  tasks:
+    - name: pull keys from server
+      uri:
+        url: https://raw.githubusercontent.com/ffallah/linux/main/ansible_id_rsa.pub
+        return_content: True
+        register: keys
+
+    - name: Set my ssh key
+      become: true
+      authorized_key:
+        user: ansible
+        state: present
+        key: keys.content
