@@ -1,6 +1,7 @@
 ---
 - name: Test connectivity
   hosts: localhost
+  connection: local
   tasks:
     - name: Ping localhost
       ping:
