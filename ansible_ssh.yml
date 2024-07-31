@@ -1,0 +1,10 @@
+---
+  - name: Set authorized key taken from file
+    hosts: all
+    tasks:
+      - name: Set my ssh key
+        become: true
+        authorized_key:
+          user: ansible
+          state: present
+          key: "{{ lookup('file', '/etc/ansible/ansible_id_rsa.pub') }}"
