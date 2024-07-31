@@ -1,0 +1,29 @@
+[appstream]
+name=CentOS Stream $releasever - AppStream
+baseurl=http://repo.usf.sport:8081/repository/CentOS_8_AppStream/
+gpgcheck=0
+enabled=1
+
+[baseos]
+name=CentOS Stream $releasever - BaseOS
+baseurl=http://repo.usf.sport:8081/repository/CentOS_8_BaseOS/
+gpgcheck=0
+enabled=1
+
+[epel]
+name=Extra Packages for Enterprise Linux 8 - $basearch
+baseurl=http://repo.usf.sport:8081/repository/CentOS_8_EPEL/
+enabled=1
+gpgcheck=0
+
+[docker-ce-stable]
+name=Docker CE Stable - $basearch
+baseurl=http://repo.usf.sport:8081/repository/CentOS_8_Docker/
+enabled=1
+gpgcheck=0
+
+[nvidia-container-toolkit]
+name=nvidia-container-toolkit
+baseurl=http://repo.usf.sport:8081/repository/Nvidia_Container_Toolkit/
+gpgcheck=0
+enabled=1
