@@ -10,7 +10,7 @@
 
     - name: Print keys
       debug:
-        var: keys
+        var: keys.content
 
     - name: Set my ssh key
       become: true
