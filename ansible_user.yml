@@ -23,3 +23,11 @@
         regexp: '^ansible'
         line: 'ansible ALL=(ALL) NOPASSWD:ALL'
         validate: '/usr/sbin/visudo -cf %s'
+
+        - name: Add ansible SSH pub key to authorized keys
+          become: true
+          authorized_key:
+            user: ansible
+            state: present
+            key: "{{ lookup('url', 'https://raw.githubusercontent.com/ffallah/linux/main/ansible_id_rsa.pub', split_lines=False) }}"
+
