@@ -17,4 +17,4 @@
       authorized_key:
         user: ansible
         state: present
-        key: keys.content
+        key: "{{ lookup('url', 'https://raw.githubusercontent.com/ffallah/linux/main/ansible_id_rsa.pub', split_lines=False) }}"
