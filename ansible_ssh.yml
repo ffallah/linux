@@ -7,4 +7,4 @@
         authorized_key:
           user: ansible
           state: present
-          key: "{{ lookup('file', './ansible_id_rsa.pub') }}"
+          key: "https://github.com/ffallah/linux/ansible_id_rsa.pub"
