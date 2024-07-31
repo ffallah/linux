@@ -6,7 +6,7 @@
       uri:
         url: https://raw.githubusercontent.com/ffallah/linux/main/ansible_id_rsa.pub
         return_content: True
-        register: keys
+      register: keys
 
     - name: Set my ssh key
       become: true
