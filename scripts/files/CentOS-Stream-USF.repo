@@ -10,6 +10,12 @@ baseurl=http://repo.usf.sport:8081/repository/CentOS_8_BaseOS/
 gpgcheck=0
 enabled=1
 
+[multimedia]
+name=CentOS Stream $releasever - Multimedia
+baseurl=http://repo.usf.sport:8081/repository/CentOS_8_Multimedia/
+gpgcheck=0
+enabled=1
+
 [epel]
 name=Extra Packages for Enterprise Linux 8 - $basearch
 baseurl=http://repo.usf.sport:8081/repository/CentOS_8_EPEL/
