@@ -16,6 +16,12 @@ baseurl=http://repo.usf.sport:8081/repository/CentOS_8_Multimedia/
 gpgcheck=0
 enabled=1
 
+[powertools]
+name=CentOS Stream $releasever - PowerTools
+baseurl=http://repo.usf.sport:8081/repository/CentOS_8_PowerTools/
+gpgcheck=0
+enabled=1
+
 [epel]
 name=Extra Packages for Enterprise Linux 8 - $basearch
 baseurl=http://repo.usf.sport:8081/repository/CentOS_8_EPEL/
