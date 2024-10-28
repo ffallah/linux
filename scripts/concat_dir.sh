@@ -21,7 +21,7 @@ while IFS= read -r line; do
 done <<< "$files"
 
 # Concatenate the files using FFmpeg
-/usr/bin/ffmpeg -f concat -safe 0 -i "$temp_file_list" -c copy $temp_mp4
+/usr/bin/ffmpeg -nostdin -f concat -safe 0 -i "$temp_file_list" -c copy $temp_mp4
 
 # Check if FFmpeg succeeded
 if [ $? -eq 0 ]; then
