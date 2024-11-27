@@ -4,7 +4,7 @@ dnf -y install sudo
 
 # Variables
 USERNAME="ansible"
-SSH_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvEwDo1nDfKHtaQI+F+ZiM9e8LZkiWkPjLl/HMGunVA6EB6qOYP9NxGa29EoYhcC+HB1Q7+s/QjHpxLf0+Eu5HAQZuAcyDKUPYbXuQrbVphecLIJQqwUyFQEJ/9NBzAVthMl99WE/g3uPAx5GMqIKZ0nkH7/3SrBVyyt4m0FdipQuqiE64P0TFGzgkqWafFUUQs+bEc7HMDGhlK3fu6trurF4SXrzujSWHdCeeM4UThtjkuHf3H0W0wt1t6TsBPKDfWKu0lUpcv/et4YXU8V1z7PVvy3nW/05sZsuzViE8+Z/yw9mfVq0KAVY6MXY4gdhdft7g+j670WrtDlsBQXIIJoVjtjNM5N3HVTmqx7toYz9rtHVJLwR12JG7vFr/h2ztaY8Ek+3OlLARmaVvN5DhV/KoF/6kYKAgxcXTZR2WiJTlBOX0l+bjTxGybUzFgA4UOsuEleua/76OQqhe/b/GUPX4PJgsvzc1NlSLAkcCzwS4WDMZjxoEj13yJQ3ALWM= ansible@tmedia1.uscoutfor.local"
+SSH_KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF3giWbUEZPCo2+zLOujech/huG/Q49lw64rPlmYcvX0 ansible@grafana.usf.sport"
 
 # Create the ansible user
 if id "$USERNAME" &>/dev/null; then
