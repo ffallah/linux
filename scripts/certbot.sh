@@ -49,12 +49,12 @@ fi
 # Create acme-dns-auth.py from base64 encoded content
 log_message "Creating acme-dns-auth.py..."
 cat <<'EOF' | base64 -d | gunzip > /etc/letsencrypt/acme-dns-auth.py 2>> "$LOG_FILE"
-H4sICKcD2GcAA2FjbWUtZG5zLWF1dGgucHkApVhtU+M4Ev6eX6E1H0h2gwPc1dRcqtiqbPAMuWFi
+H4sICDCb2WcAA2FjbWUtZG5zLWF1dGgucHkApVhtU+M4Ev6eX6E1H0h2gwPc1dRcqtiqbPAMuWFi
 KvHs7BVLuYytEO84kk+SgSzLf79uSX5NYNg6fwDH6m71y9Otbh38MCqkGN2mbETZPcm3as3ZP3rp
 JudCkT8kZ+U7l+WboP8tqFTVb7mVvd7BwQHxzmcBCS68pTcmU85W6V0hIpVyRu6jDFgIEAEl+bK4
 JIqTKN7Qo4RJkjKpIhbT3mT62TufL0MkOCPOWqlcjkejqFBrt6R2U+6AjKtIrcmKi1pKLGhCmUqj
 jEjFRXRHe8vAX0w+euHVJLhAgSOq4lFGlaQsFttcjZAZZaKhKPXrOlU0S6UyopNEUCmJiNgdaI8q
-Zxl/IGpNSZEnkYKPK8E3wOg9Rps8o2Myubz0v4YfFv5n2PDaOfnXqXvy7r17cuwej07/6QyJMx4f
+Zxl/IGpNSZEnkYKPK8E3wOg9Rps8o2Myubz0v4YfFv5n2PDaOfnXqXvy7r17cuwej07/6QyJMx6f
 jE5O3zs3vTbtDYj5wEVMwcFHgt6BFsZ7LvHvqXgQKe6He0eZoFGyJfQRaFJ2V/sgimNeMCXd3gd/
 MfXChfdxtgy8Bcj/EGWSmjgRcu6TuR+YgP3igRYQttmSXPmzeQDLGCdDaJ4Lb+EBHTkHb/rzZfXd
 BPTc/zyZzWELLl0AUSo4u3am3iL4xQ9CswjGpiti3l0ItlDyIVXrvvOj6wzGPaJVslLMy/Xp+Kb3
