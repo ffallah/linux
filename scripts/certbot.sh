@@ -105,7 +105,7 @@ if certbot certonly \
     --manual-auth-hook /etc/letsencrypt/acme-dns-auth.py \
     --preferred-challenges dns \
     --debug-challenges \
-    -d "$DOMAIN" >> "$LOG_FILE" 2>&1; then
+    -d "$DOMAIN"; then
     log_message "${GREEN}Successfully obtained certificate for $DOMAIN${NC}"
 else
     log_message "${RED}Error: Certbot failed to obtain certificate${NC}"
